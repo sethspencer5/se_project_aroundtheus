@@ -1,4 +1,4 @@
-# Project 3: Around The U.S.
+Project 3: Around The U.S.
 
 ### Overview  
 
@@ -8,14 +8,11 @@
   
 **Intro**
   
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
+This was the third project from practicum that most resembled a reaal world project. Only using Figma for a brief and actually iploading it to github pages.    
   
-**Figma**  
+[Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
   
-* [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
+  https://tinypng.com/web/output/c1c17x0cv1zxhu3bg6yta2qkgwnfqzaa/readme%20mobile%20photo.PNG
+
+  https://tinypng.com/web/output/t9q462b5edm0r2cgbjxey335cu314dv2/readme%20photo.PNG
   
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!

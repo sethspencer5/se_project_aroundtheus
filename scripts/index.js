@@ -29,3 +29,71 @@ const initialCards = [
         link: "https://github.com/sethspencer5/se_project_aroundtheus/blob/main/images/lago-di-braies.png?raw=true",
       },
 ]
+
+// Variables
+const editProfilePopUp = document.querySelector(".modal__edit");
+
+const editProfileButton = document.querySelector(".profile__edit");
+
+const editProfileForm = document.querySelector(".modal__form-edit");
+
+const saveProfileEditForm = document.querySelector(".modal__form-edit");
+
+const closeEditProfileButton = document.querySelector(
+  ".modal__container_close-button"
+);
+
+const profileName = document.querySelector(".profile__name");
+
+const profileJob = document.querySelector(".profile__title");
+
+const nameInput = document.querySelector(`.form__input[name="name"]`);
+
+const jobInput = document.querySelector(`.form__input[name="description"]`);
+
+// Open Profile Modal
+
+function openModal(modal) {
+  modal.classList.add("modal__opened");
+}
+
+function openProfileModal() {
+  const profileName = document.querySelector(".profile__name").textContent;
+  const profileJob = document.querySelector(".profile__title").textContent;
+  const nameInput = document.querySelector('.form__input[name="name"]');
+  const jobInput = document.querySelector('.form__input[name="description"]');
+  nameInput.value = profileName;
+  jobInput.value = profileJob;
+  openModal(editProfilePopUp);
+}
+
+editProfileButton.addEventListener("click", openProfileModal);
+
+// Close Profile Modal
+
+function closeModal(modal) {
+  modal.classList.remove("modal__opened");
+}
+
+closeEditProfileButton.addEventListener("click", closeProfileModal);
+
+function closeProfileModal() {
+  closeModal(editProfilePopUp);
+}
+
+// Submit Button
+
+function handleProfileFormSubmit(evt) {
+  evt.preventDefault();
+
+  const nameInput = document.getElementById("name").value;
+  const jobInput = document.getElementById("description").value;
+
+  profileName.textContent = nameInput;
+  profileJob.textContent = jobInput;
+
+  editProfileForm.reset();
+  closeProfileModal();
+}
+
+saveProfileEditForm.addEventListener("submit", handleProfileFormSubmit);

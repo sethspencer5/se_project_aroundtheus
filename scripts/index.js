@@ -97,3 +97,27 @@ function handleProfileFormSubmit(evt) {
 }
 
 saveProfileEditForm.addEventListener("submit", handleProfileFormSubmit);
+
+
+// Template of Cards
+
+const cardsList = document.querySelector(".cards__list");
+
+initialCards.forEach((cardObject) => {
+  const card = getCardElement(cardObject);
+  cardsList.appendChild(card);
+});
+
+function getCardElement(data) {
+  const cardElement = document.querySelector("#card-template").content;
+  const card = cardElement.querySelector(".card").cloneNode(true);
+
+  const cardTitle = card.querySelector(".card__title");
+  cardTitle.textContent = data.name;
+
+  const cardImage = card.querySelector(".card__image");
+  cardImage.setAttribute("src", data.link);
+  cardImage.setAttribute("alt", `Photo of ${data.name}`);
+
+  return card;
+}

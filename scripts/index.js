@@ -1,39 +1,7 @@
-const initialCards = [
-    {
-        name: "Yosemite Valley",
-        link: "https://github.com/sethspencer5/se_project_aroundtheus/blob/main/images/yosemite-valley.jpg?raw=true",
-      },
-    
-      {
-        name: "Lake Louise",
-        link: "https://github.com/sethspencer5/se_project_aroundtheus/blob/main/images/lake-louise.png?raw=true",
-      },
-    
-      {
-        name: "Bald Mountains",
-        link: "https://github.com/sethspencer5/se_project_aroundtheus/blob/main/images/bald-mountains.png?raw=true",
-      },
-    
-      {
-        name: "Latemar",
-        link: "https://github.com/sethspencer5/se_project_aroundtheus/blob/main/images/latemar.png?raw=true",
-      },
-    
-      {
-        name: "Vanoise National Park",
-        link: "https://github.com/sethspencer5/se_project_aroundtheus/blob/main/images/vanoise-national-park.png?raw=true",
-      },
-    
-      {
-        name: "Lago di Braies",
-        link: "https://github.com/sethspencer5/se_project_aroundtheus/blob/main/images/lago-di-braies.png?raw=true",
-      },
-]
-
 // Variables
-const editProfilePopUp = document.querySelector(".modal__edit");
+const editProfilePopUp = document.querySelector(".modal");
 
-const editProfileButton = document.querySelector(".profile__edit");
+const editProfileButton = document.querySelector(".profile__edit-button");
 
 const editProfileForm = document.querySelector(".modal__form-edit");
 
@@ -43,9 +11,9 @@ const closeEditProfileButton = document.querySelector(
   ".modal__container_close-button"
 );
 
-const profileName = document.querySelector(".profile__name");
+const profileName = document.querySelector(".profile__header");
 
-const profileJob = document.querySelector(".profile__title");
+const profileJob = document.querySelector(".profile__description");
 
 const nameInput = document.querySelector(`.form__input[name="name"]`);
 
@@ -58,8 +26,8 @@ function openModal(modal) {
 }
 
 function openProfileModal() {
-  const profileName = document.querySelector(".profile__name").textContent;
-  const profileJob = document.querySelector(".profile__title").textContent;
+  const profileName = document.querySelector(".profile__header").textContent;
+  const profileJob = document.querySelector(".profile__description").textContent;
   const nameInput = document.querySelector('.form__input[name="name"]');
   const jobInput = document.querySelector('.form__input[name="description"]');
   nameInput.value = profileName;
@@ -98,6 +66,39 @@ function handleProfileFormSubmit(evt) {
 
 saveProfileEditForm.addEventListener("submit", handleProfileFormSubmit);
 
+// Cards
+
+const initialCards = [
+  {
+    name: "Yosemite Valley",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
+  },
+
+  {
+    name: "Lake Louise",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lake-louise.jpg",
+  },
+
+  {
+    name: "Bald Mountains",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/bald-mountains.jpg",
+  },
+
+  {
+    name: "Latemar",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/latemar.jpg",
+  },
+
+  {
+    name: "Vanoise National Park",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/vanoise.jpg",
+  },
+
+  {
+    name: "Lago di Braies",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg ",
+  },
+];
 
 // Template of Cards
 

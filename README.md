@@ -8,7 +8,7 @@ Project 3: Around The U.S.
 
 **Intro**
 
-This was the third project from practicum that most resembled a reaal world project. Only using Figma for a brief and actually iploading it to github pages.
+This was the third project from practicum that most resembled a real world project. Only using Figma for a brief and actually uploading it to github pages.
 
 [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
 

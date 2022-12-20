@@ -7,9 +7,7 @@ const editProfileForm = document.querySelector(".modal__form-edit");
 
 const saveProfileEditForm = document.querySelector(".modal__form-edit");
 
-const closeEditProfileButton = document.querySelector(
-  ".modal__container_close-button"
-);
+const closeEditProfileButton = document.querySelector(".modal__container_close-button");
 
 const profileName = document.querySelector(".profile__header");
 
@@ -22,7 +20,7 @@ const jobInput = document.querySelector(`.form__input[name="description"]`);
 // Open Profile Modal
 
 function openModal(modal) {
-  modal.classList.add("modal__opened");
+  modal.classList.add("modal_opened");
 }
 
 function openProfileModal() {
@@ -33,6 +31,7 @@ function openProfileModal() {
   nameInput.value = profileName;
   jobInput.value = profileJob;
   openModal(editProfilePopUp);
+  console.log(123);
 }
 
 editProfileButton.addEventListener("click", openProfileModal);
@@ -40,7 +39,7 @@ editProfileButton.addEventListener("click", openProfileModal);
 // Close Profile Modal
 
 function closeModal(modal) {
-  modal.classList.remove("modal__opened");
+  modal.classList.remove("modal_opened");
 }
 
 closeEditProfileButton.addEventListener("click", closeProfileModal);
@@ -60,7 +59,6 @@ function handleProfileFormSubmit(evt) {
   profileName.textContent = nameInput;
   profileJob.textContent = jobInput;
 
-  editProfileForm.reset();
   closeProfileModal();
 }
 

@@ -12,7 +12,7 @@
     background-color: rgba(7, 7, 7, 0.6);
   }
   
-  .modal__opened {
+  .modal_opened {
     display: flex;
     opacity: 1;
     visibility: visible;
